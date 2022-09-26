@@ -14,6 +14,7 @@ end
 rails_command "generate rspec:install"
 
 copy_file "spec/support/factory_bot.rb"
+copy_file ".env"
 copy_file "docker-compose.yml"
 copy_file "config/tsconfig.json"
 copy_file "config/webpack.config.js"

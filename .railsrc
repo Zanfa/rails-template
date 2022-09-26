@@ -1,0 +1,7 @@
+--database=postgresql
+--skip-test
+--javascript=webpack
+--skip-action-mailbox
+--skip-action-text
+--skip-active-storage
+--template=rails-template.rb
