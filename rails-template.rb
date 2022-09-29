@@ -25,7 +25,7 @@ copy_file "app/assets/stylesheets/application.css", force: true
 
 after_bundle do
   run "mv app/javascript/application.js app/javascript/application.ts"
-  insert_into_file "app/javascript/application.ts", "import \"../assets/stylesheets/application.css\";\n", before: "import"
+  insert_into_file "app/javascript/application.ts", "import \"../assets/stylesheets/application.css\";\n", before: "import \"@hotwired/turbo-rails\""
 
   scripts = <<-EOF
   "scripts": {
